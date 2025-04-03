@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Plataforma de adoção de animais - Encontre seu novo amigo peludo"
+    />
+    <title>Me Adote!</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <!-- Botão Hamburguer (visível apenas em mobile) -->
+        <button class="menu-toggle" aria-label="Menu mobile">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+
+        <div class="header-brand">
+          <img src="assets/title.png" alt="Titulo - Me Adote!" />
+          <img
+            src="assets/icon.png"
+            alt="Logo Me Adote - Plataforma de adoção de animais"
+            width="150"
+            height="auto"
+          />
+        </div>
+
+        <nav class="header-navigation" aria-label="Navegação principal">
+          <ul class="header-links">
+            <li>
+              <a href="/sobre" aria-label="Saiba mais sobre nossa organização"
+                >Quem somos</a
+              >
+            </li>
+            <li>
+              <a href="/adotar" aria-label="Processo para adotar um animal"
+                >Quero adotar</a
+              >
+            </li>
+            <li>
+              <a href="/ajudar" aria-label="Formas de ajudar nossa causa"
+                >Quero ajudar</a
+              >
+            </li>
+            <li>
+              <a href="/parcerias" aria-label="Informações sobre parcerias"
+                >Parcerias</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button
+            class="btn-login"
+            type="button"
+            aria-label="Acessar minha conta"
+          >
+            Entrar
+          </button>
+          <button
+            class="btn-register"
+            type="button"
+            aria-label="Criar uma nova conta"
+          >
+            Cadastre-se
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="image-carousel">
+      <div class="carousel-container">
+        <div class="carousel-track">
+          <div class="carousel-slide">
+            <img
+              src="assets/carousel/banner1.png"
+              alt="Imagem 1 do carrossel"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="assets/carousel/banner2.png"
+              alt="Imagem 2 do carrossel"
+            />
+          </div>
+          <div class="carousel-slide">
+            <img
+              src="assets/carousel/banner3.png"
+              alt="Imagem 3 do carrossel"
+            />
+          </div>
+          <!-- Adicione mais slides conforme necessário -->
+        </div>
+      </div>
+
+      <div class="carousel-nav">
+        <button class="carousel-prev" aria-label="Slide anterior">‹</button>
+        <button class="carousel-next" aria-label="Próximo slide">›</button>
+      </div>
+
+      <div class="carousel-dots">
+        <!-- Os pontos serão adicionados dinamicamente via JavaScript -->
+      </div>
+    </div>
+
+    <section class="button-adopt">
+      <button type="button" class="adopt-btn">Quero adotar um pet!</button>
+      <button type="button" class="adopt-btn">Quero anunciar um pet!</button>
+    </section>
+
+    <main class="about-container">
+      <section class="about-content">
+        <h1>Sobre o Me Adote!</h1>
+        <p>
+          Bem-vindo ao Me Adote!, uma plataforma dedicada a conectar animais que
+          precisam de um lar a pessoas prontas para oferecer amor e cuidado.
+          Acreditamos que todo animal merece uma vida digna, cheia de carinho e
+          proteção, e trabalhamos diariamente para transformar essa crença em
+          realidade. Nossa missão é promover a adoção responsável e
+          conscientizar sobre a importância de dar um lar definitivo a animais
+          abandonados. Queremos reduzir o número de pets nas ruas e em abrigos,
+          garantindo que cada um encontre uma família que o ame de verdade.
+        </p>
+      </section>
+
+      <aside class="social-sidebar">
+        <h2>Nos siga nas redes</h2>
+        <div class="social-links">
+          <a
+            href="https://instagram.com/meadote"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a
+            href="https://twitter.com/meadote"
+            target="_blank"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+            <span>Twitter</span>
+          </a>
+          <a
+            href="https://youtube.com/meadote"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+            <span>YouTube</span>
+          </a>
+
+          <a
+            href="https://api.whatsapp.com/send?phone=SEUNUMERO"
+            target="_blank"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+            <span>WhatsApp</span>
+          </a>
+        </div>
+      </aside>
+    </main>
+    <section class="our-pets">
+      <h1>Nossos amiguinhos!</h1>
+
+      <div class="pets-carousel">
+        <!-- Item 1 -->
+        <div class="pet-card">
+          <img
+            src="assets/pets/dog1.jpg"
+            alt="Thor - Labrador de 2 anos esperando por um lar"
+          />
+          <div class="pet-info">
+            <h3>Thor</h3>
+            <p>Labrador, 2 anos</p>
+            <button class="adopt-btn">Quero adotar</button>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="pet-card">
+          <img
+            src="assets/pets/cat1.jpeg"
+            alt="Pretinha - Gata preta de 1 ano"
+          />
+          <div class="pet-info">
+            <h3>Pretinha</h3>
+            <p>Vira-lata, 1 ano</p>
+            <button class="adopt-btn">Quero adotar</button>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="pet-card">
+          <img
+            src="assets/pets/dog2.jpeg"
+            alt="Bigoo - Vira-lata bicolor de 3 anos"
+          />
+          <div class="pet-info">
+            <h3>Bigoo</h3>
+            <p>Vira-lata, 3 anos</p>
+            <button class="adopt-btn">Quero adotar</button>
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="pet-card">
+          <img src="assets/pets/cat2.jpg" alt="Mia - Gata persa de 2 anos" />
+          <div class="pet-info">
+            <h3>Mia</h3>
+            <p>Persa, 2 anos</p>
+            <button class="adopt-btn">Quero adotar</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-controls">
+        <button class="prev-btn" aria-label="Animal anterior">‹</button>
+        <button class="next-btn" aria-label="Próximo animal">›</button>
+      </div>
+    </section>
+
+    <section class="info-cards">
+      <!-- Caixa 1 - O Que Fazemos -->
+      <div class="info-card">
+        <h3><i class="fas fa-paw"></i> O Que Fazemos?</h3>
+        <ul class="feature-list">
+          <li>
+            <i class="fas fa-check"></i> <strong>Facilitamos adoções</strong> –
+            Conectamos animais resgatados a futuros tutores.
+          </li>
+          <li>
+            <i class="fas fa-check"></i> <strong>Apoiamos protetores</strong> –
+            Damos visibilidade a ONGs e cuidadores independentes.
+          </li>
+          <li>
+            <i class="fas fa-check"></i>
+            <strong>Educamos sobre posse responsável</strong> – Compartilhamos
+            informações sobre cuidados veterinários.
+          </li>
+          <li>
+            <i class="fas fa-check"></i>
+            <strong>Incentivamos a castração</strong> – Ajudamos a controlar a
+            superpopulação.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Caixa 2 - Por Que Adotar -->
+      <div class="info-card">
+        <h3><i class="fas fa-heart"></i> Por Que Adotar?</h3>
+        <ul class="feature-list">
+          <li>
+            <i class="fas fa-paw"></i> <strong>Você salva uma vida</strong> –
+            Muitos animais esperam anos por um lar.
+          </li>
+          <li>
+            <i class="fas fa-paw"></i> <strong>Ganha um amigo leal</strong> – O
+            amor de um pet adotado é incondicional.
+          </li>
+          <li>
+            <i class="fas fa-paw"></i> <strong>Combate o abandono</strong> –
+            Cada adoção reduz animais nas ruas.
+          </li>
+        </ul>
+      </div>
+
+      <!-- Caixa 3 - Como Ajudar -->
+      <div class="info-card">
+        <h3><i class="fas fa-hands-helping"></i> Como Ajudar?</h3>
+        <ul class="feature-list">
+          <li>
+            <i class="fas fa-home"></i> <strong>Adotando</strong> – Dê um lar
+            definitivo.
+          </li>
+          <li>
+            <i class="fas fa-hand-holding-heart"></i>
+            <strong>Apadrinhando</strong> – Custeie cuidados temporários.
+          </li>
+          <li>
+            <i class="fas fa-share-alt"></i> <strong>Divulgando</strong> –
+            Compartilhe nossos perfis.
+          </li>
+          <li>
+            <i class="fas fa-donate"></i> <strong>Doando</strong> – Mantenha
+            nosso trabalho ativo.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="callout-box">
+      <p>
+        "Adotar é um ato de amor que salva duas vidas: a do animal e a sua."
+      </p>
+      <a href="/adotar" class="cta-button"
+        >Quero Adotar <i class="fas fa-arrow-right"></i
+      ></a>
+    </div>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <!-- Seção de Logo e Slogan -->
+        <div class="footer-brand">
+          <img src="assets/title.png" alt="Logo Me Adote" class="footer-logo" />
+          <p class="footer-slogan">Não compre, adote! ❤️</p>
+          <div class="footer-social-links">
+            <a href="#" aria-label="Instagram" class="footer-social-icon"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" aria-label="Twitter" class="footer-social-icon"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="#" aria-label="WhatsApp" class="footer-social-icon"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
+
+        <!-- Links Rápidos -->
+        <div class="footer-section">
+          <h4 class="footer-title">Links Rápidos</h4>
+          <ul class="footer-links-list">
+            <li><a href="/" class="footer-link">Home</a></li>
+            <li><a href="/adotar" class="footer-link">Adotar</a></li>
+            <li><a href="/doar" class="footer-link">Doar</a></li>
+            <li><a href="/blog" class="footer-link">Blog</a></li>
+            <li><a href="/contato" class="footer-link">Contato</a></li>
+          </ul>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="footer-section">
+          <h4 class="footer-title">Contato</h4>
+          <ul class="footer-contact-info">
+            <li>
+              <i class="fas fa-envelope footer-contact-icon"></i>
+              contato@meadote.com.br
+            </li>
+            <li>
+              <i class="fas fa-phone footer-contact-icon"></i> (11) 98765-4321
+            </li>
+            <li>
+              <i class="fas fa-map-marker-alt footer-contact-icon"></i> São
+              Paulo - SP
+            </li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-section">
+          <h4 class="footer-title">Receba nossas novidades</h4>
+          <form class="footer-newsletter-form">
+            <input
+              type="email"
+              placeholder="Seu melhor e-mail"
+              required
+              class="footer-newsletter-input"
+            />
+            <button type="submit" class="footer-newsletter-button">
+              Assinar <i class="fas fa-paper-plane footer-newsletter-icon"></i>
+            </button>
+          </form>
+          <p class="footer-text">
+            Cadastre-se e receba alertas sobre novos animais para adoção.
+          </p>
+        </div>
+      </div>
+
+      <!-- Rodapé inferior -->
+      <div class="footer-bottom">
+        <p class="footer-copyright">
+          © 2023 Me Adote! Todos os direitos reservados.
+        </p>
+        <div class="footer-legal-links">
+          <a href="/politica-de-privacidade" class="footer-legal-link"
+            >Política de Privacidade</a
+          >
+          <a href="/termos-de-uso" class="footer-legal-link">Termos de Uso</a>
+        </div>
+      </div>
+    </footer>
+    <script src="carrossel.js"></script>
+  </body>
+</html>
